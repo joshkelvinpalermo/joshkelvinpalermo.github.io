@@ -5,3 +5,7 @@ body {
     background-attachment: fixed;
     cursor: crosshair;
 }
+
+h1 {
+    text-align: center;
+}
