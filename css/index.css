@@ -79,9 +79,15 @@ body {
 .urls {
 	position: relative;
 	margin-top: 50px;
+    display: inline-block;  /* Only as wide as content */
+    padding: 10px 20px;
+    border: 2px solid #4BC0C8;
+    border-radius: 20px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background */
+    text-align: center;
 }
 
-.about-me {
+.view-my-work {
 	background-color: transparent;
 	border-radius: 8px;
 	border-width: 0;
@@ -90,7 +96,6 @@ body {
 	display: inline-block;
 	font-family: sans-serif;
 	font-size: 20px;
-	font-weight: bold;
 	line-height: 20px;
 	list-style: none;
 	margin: 0;
@@ -104,13 +109,13 @@ body {
 	touch-action: manipulation;
 	transition-duration: 0.5s;
 }
+.view-my-work:hover {
 
-.about-me:hover {
 	background-color: #b7ede3;
 	color: white;
 }
 
-.view-my-resume {
+.read-more {
 	background-color: transparent;
 	border-radius: 8px;
 	border-width: 0;
@@ -134,7 +139,7 @@ body {
 	transition-duration: 0.5s;
 }
 
-.view-my-resume:hover {
+.read-more:hover {
 	background-color: #b7ede3;
 	color: white;
 }
@@ -213,44 +218,27 @@ body {
 	vertical-align: baseline;
 }
 
-.footer_1{
-	text-align: left;
-    text-indent: 30px;
-	position: relative;
-	top: -75px;
-	font-size: 18px;
-	color: #5e5e63;;
+.card_title {
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(135deg, #FF6B6B, #6B8EFA, #48C6EF);
+    text-align: justify;
+    letter-spacing: -1.25px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+    font-family: sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin-top: 50px;
 }
 
-.description_1{
+.description{
 	text-align: left;
     text-indent: 30px;
 	position: relative;
-	top: -100px;
+	top: -50px;
 	font-size: 20px;
 	color: #5e5e63;;
-}
-
-.card_2 {
-	text-align: center;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 250px;
-	display: flex;
-	font-size: 36px;
-	flex-direction: column;
-	justify-content: space-between;
-	color: #5e5e63;
-	font-family: Inter, sans-serif;
-	position: relative;
-	max-width: 600px;
-	height: 300px;
-	padding: 35px;
-	border: 1px solid rgba(255, 255, 255, .25);
-	border-radius: 20px;
-	background-color: #f0f4f4;
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(15px);
-	vertical-align: baseline;
 }
